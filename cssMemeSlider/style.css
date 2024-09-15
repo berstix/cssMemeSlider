@@ -42,7 +42,6 @@ ul {
     list-style: none;
   
 }
-
 .box-text{
     color: whitesmoke;
     font-size: 22px;
@@ -107,7 +106,6 @@ ul {
         height: 15px;
         background-color: gray;
         border-radius: 50%;
-        
         cursor: pointer;
         
       }
@@ -115,9 +113,3 @@ ul {
         gap: 80px;
       }
 }
-
-
-
-
-
-  
