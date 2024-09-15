@@ -3,8 +3,8 @@
 }
 body{
     background-color: #624E88;
-    width: 1920px;
-    height: 1080px;
+    width: 1024px;
+    height: 500px;
 }
 .slider{
     background-color: #8967B3;
@@ -31,17 +31,22 @@ body{
 }
 .controls{
     width: 20vh;
+    margin-top: -1rem;
+    margin-left: 51rem;
 }
 ul {
+    
     display: flex;
     transition: transform 0.5s ease-in-out;
     list-style: none;
-   
+  
 }
 
 .box-text{
     color: whitesmoke;
     font-size: 22px;
+    margin-top: 1rem;
+    
 }
 .marker {
     margin-top: 10%;
@@ -58,3 +63,56 @@ ul {
   .marker.active {
     background-color: black;
   }
+  @media (max-width: 500px) {
+    *{
+        margin: 0 auto;
+    }
+    body{
+        
+        width: 500px;
+        height: 400px;
+    }
+    .slider{
+        background-color: #8967B3;
+        margin-top: 15em;
+        width: 30rem;
+        height: 18rem;
+        border-radius: 2vh;
+        text-align: center;
+        overflow: hidden;
+    }
+    .mem-img{
+        margin-top: 2%;
+        
+        width: 25rem;
+        height: 12rem;
+        border-radius: 10px;
+    }
+    .box-text{
+        color: whitesmoke;
+        font-size: 18px;
+        margin-top: 1rem;
+        
+    }
+    ul{
+        position: static;
+        margin-top: -195px;
+        margin-left: -660px;
+        width: 100px;
+    }
+    .marker {
+        margin-top: 200px;
+        width: 15px;
+        height: 15px;
+        background-color: gray;
+        border-radius: 50%;
+        
+        cursor: pointer;
+        
+      }
+      .slider-box{
+        gap: 80px;
+      }
+}
+
+  
