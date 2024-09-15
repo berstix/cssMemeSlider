@@ -1,0 +1,21 @@
+*{
+    margin: 0 auto;
+}
+body{
+    background-color: #624E88;
+    width: 1920px;
+    height: 1080px;
+}
+.slider{
+    background-color: #8967B3;
+    margin-top: 15em;
+    width: 75rem;
+    height: 30rem;
+    border-radius: 2vh;
+    text-align: center;
+}
+.mem-img{
+    margin: 0 auto;
+    width: 50rem;
+    height: 25rem;
+}
