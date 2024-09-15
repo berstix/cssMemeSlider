@@ -35,7 +35,8 @@ body{
     margin-left: 51rem;
 }
 ul {
-    
+    margin-left: -25px;
+    width: 100px;
     display: flex;
     transition: transform 0.5s ease-in-out;
     list-style: none;
