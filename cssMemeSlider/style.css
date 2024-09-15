@@ -9,13 +9,52 @@ body{
 .slider{
     background-color: #8967B3;
     margin-top: 15em;
-    width: 75rem;
+    width: 60rem;
     height: 30rem;
     border-radius: 2vh;
     text-align: center;
+    overflow: hidden;
 }
 .mem-img{
-    margin: 0 auto;
+    margin-top: 2%;
+    
     width: 50rem;
     height: 25rem;
+    border-radius: 20px;
 }
+.slider-box{
+    display: flex;
+    gap: 160px;
+    padding-left: 8%;
+    
+    transition: transform 0.5s ease-in-out;
+}
+.controls{
+    width: 20vh;
+}
+ul {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    list-style: none;
+   
+}
+
+.box-text{
+    color: whitesmoke;
+    font-size: 22px;
+}
+.marker {
+    margin-top: 10%;
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    
+    cursor: pointer;
+  }
+  .marker:hover{
+    background-color:royalblue;
+  }
+  .marker.active {
+    background-color: black;
+  }
