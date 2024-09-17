@@ -1,118 +1,120 @@
-*{
-    margin: 0 auto;
-}
+
 body{
-    background-color: #624E88;
-    width: 1024px;
-    height: 500px;
+  
+    background-color:#777}
+
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
 }
-.slider{
-    background-color: #8967B3;
-    margin-top: 15em;
-    width: 60rem;
-    height: 30rem;
-    border-radius: 2vh;
-    text-align: center;
-    overflow: hidden;
-}
-.mem-img{
-    margin-top: 2%;
-    
+
+.slider {
     width: 50rem;
     height: 25rem;
-    border-radius: 20px;
-}
-.slider-box{
-    display: flex;
-    gap: 160px;
-    padding-left: 8%;
-    
-    transition: transform 0.5s ease-in-out;
-}
-.controls{
-    width: 20vh;
-    margin-top: -1rem;
-    margin-left: 51rem;
-}
-ul {
-    
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    list-style: none;
-  
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.box-text{
-    color: whitesmoke;
-    font-size: 22px;
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 30%;
+}
+
+/* Стиль текста для слайда */
+.caption {
+    
+    
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1vh;
+    border-radius: 5px;
+    z-index: 10;
+    max-width: 100%;
+}
+
+.caption h2 {
+    font-size: 1.5rem;
+    
+    
+}
+
+/* Управление видимостью слайдов */
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slides {
+    transform: translateX(-300%);
+}
+
+/* Стили для кнопок навигации */
+.navigation {
     margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    margin-left: 35%;
     
-}
-.marker {
-    margin-top: 10%;
-    width: 15px;
-    height: 15px;
-    background-color: gray;
-    border-radius: 50%;
-    
-    cursor: pointer;
-  }
-  .marker:hover{
-    background-color:royalblue;
-  }
-  .marker.active {
-    background-color: black;
-  }
-  @media (max-width: 500px) {
-    *{
-        margin: 0 auto;
-    }
-    body{
-        
-        width: 500px;
-        height: 400px;
-    }
-    .slider{
-        background-color: #8967B3;
-        margin-top: 15em;
-        width: 30rem;
-        height: 18rem;
-        border-radius: 2vh;
-        text-align: center;
-        overflow: hidden;
-    }
-    .mem-img{
-        margin-top: 2%;
-        
-        width: 25rem;
-        height: 12rem;
-        border-radius: 10px;
-    }
-    .box-text{
-        color: whitesmoke;
-        font-size: 18px;
-        margin-top: 1rem;
-        
-    }
-    ul{
-        position: static;
-        margin-top: -195px;
-        margin-left: -660px;
-        width: 100px;
-    }
-    .marker {
-        margin-top: 200px;
-        width: 15px;
-        height: 15px;
-        background-color: gray;
-        border-radius: 50%;
-        
-        cursor: pointer;
-        
-      }
-      .slider-box{
-        gap: 80px;
-      }
 }
 
-  
+.navigation label {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.navigation label:hover,
+#slide1:checked ~ .navigation label[for="slide1 ,caption"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"],
+#slide4:checked ~ .navigation label[for="slide4"] {
+    background-color: red;
+}
+@media(max-width: 500px){
+    .slider {
+        width: 100%;
+        height: -100%;
+    }
+    .slide img{
+        height: 20rem;
+        
+    }
+    .slide{
+        height: 30rem;
+    }
+    .caption h2{
+        padding-bottom: 20px;
+    }
+}
