@@ -5,34 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>cssMemeSlider</title>
+    <title>Document</title>
 </head>
 <body>
-    <header>
+    <div class="slider-container">
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
 
-    </header>
-    <main>
-    <div class="slider" id="slider">
-        <div class="slider-box" id="box">
+            <div class="slides">
+                <div class="slide">
+                    <img src="./img/1.gif" alt="Slide 1">
+                    <div class="caption">
+                        <h2>Ловим говнокодера на горячем</h2>
+                        
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./img/2.gif" alt="Slide 2">
+                    <div class="caption">
+                        <h2>Когда роешься в древних логах</h2>
+                        
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./img/3.gif" alt="Slide 3">
+                    <div class="caption">
+                        <h2>Процесс обучения джуна не легкий, но результат все же есть</h2>
+                        
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./img/4.gif" alt="Slide 4">
+                    <div class="caption">
+                        <h2>В офис пришли с проверкой, а у тебя все программы - крякнутые.</h2>
+                        
+                    </div>
+                </div>
+                <!-- Навигационные точки -->
+        
+            </div>
             
         </div>
-        <div class="controls">
-            <ul>
-                <li class="marker" data-slide="1"></li>
-                <li class="marker" data-slide="2"></li>
-                <li class="marker" data-slide="3"></li>
-                <li class="marker" data-slide="4"></li>
-            </ul>
-        </div>
-        <div class="box-text">
 
+        <div class="navigation">
+            <label for="slide1"></label>
+            
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
         </div>
     </div>
-
-</main>
-<footer>
-
-</footer>
-<script src="./index.js"></script>
 </body>
 </html>
